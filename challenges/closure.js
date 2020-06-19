@@ -18,7 +18,16 @@ myFunction();
 
 // Explanation: 
 
+// JavaScript allows a child function to reach up to its parent function but not the other way around. Scope is used to define the behavior of a nested function and what is or isn't allowed.
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+const summation = number => {
+  let total = 0
+  for(number; number > 0; number --){
+    total += number;
+  } return total;
+}
+
+ console.log(summation(3));
